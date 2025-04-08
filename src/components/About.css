@@ -1,0 +1,119 @@
+.about-page {
+  background: linear-gradient(to bottom, #fbd3e9 0%, #ff4b5c 100%);
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+  }
+  
+  .about-page h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  /* 키워드 버튼 */
+  .keyword-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .keyword-btn {
+    background-color: #ff6b6b;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+  }
+  
+  .keyword-btn:hover {
+    transform: scale(1.05);
+    background-color: #ebff77;
+    color: #ff6b6b;
+  }
+  
+  /* 슬라이더 갤러리 */
+  .about-slider {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .about-slider img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+  
+  
+  /* 메인 콘텐츠 */
+  .about-content {
+    display: flex;
+    align-items: flex-start; /* 텍스트 상단 정렬 */
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: nowrap; /* 줄바꿈 안 되게 */
+    text-align: left;
+  }
+  
+  .about-image {
+    flex: 0 0 auto;
+  }
+  
+  .about-image img {
+    height: 800px;        /* ✅ 고정 높이로 길게 */
+    width: 800px;          /* ✅ 비율 유지 */
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+  
+  .bio-section {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: white;
+    max-width: 700px;
+  }
+  
+  .bio-section p {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* 모바일 대응 */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      padding: 2rem;
+      text-align: center;
+    }
+  
+    .about-image,
+    .bio-section {
+      flex: 1 1 100%;
+    }
+  
+    .about-image img {
+      width: 90vw;
+      height: auto;
+    }
+  
+    .bio-section {
+      text-align: left;
+    }
+  
+    .about-slider img {
+      height: 300px;
+    }
+  }
+  
