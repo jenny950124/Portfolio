@@ -40,7 +40,7 @@ const FloatingText = () => {
         <span className="emoji">🖌️</span>
       </div>
 
-      <p className="floating-hint">👀 Try hovering over the letters...</p>
+      <p className="floating-hint">👀 Try hovering over the letters...!</p>
 
       <div className="floating-text">
         {letters.map((char, index) => (
