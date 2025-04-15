@@ -24,12 +24,12 @@ const About = () => {
 
   return (
     <section className="about-page">
-      <h2>Jenny "NaYeon" Kim</h2>
-
-      <div className="keyword-buttons">
-        <button className="keyword-btn">Design</button>
-        <button className="keyword-btn">Empathy</button>
-        <button className="keyword-btn">Creativity</button>
+      <div className="intro-heading">
+        <p className="intro">
+          Hi, I'm <span className="wave" role="img" aria-label="waving hand">👋</span>
+        </p>
+        <h2><span className="highlight-name">Jenny "NaYeon" Kim</span></h2>
+        <p className="subtitle">UX/UI Designer & Developer</p>
       </div>
 
       <div className="about-content">
@@ -43,6 +43,12 @@ const About = () => {
         </div>
 
         <div className="bio-section">
+          <div className="keyword-buttons">
+            <button className="keyword-btn">Design</button>
+            <button className="keyword-btn">Empathy</button>
+            <button className="keyword-btn">Creativity</button>
+          </div>
+
           <p>
             Hi, I’m Jenny Kim — a UX/UI designer and frontend developer based in Canada, originally from South Korea.
             With a background in nursing, I bring a unique perspective to design, combining empathy with creative problem-solving.

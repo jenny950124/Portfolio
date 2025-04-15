@@ -36,9 +36,6 @@ import gps11 from '../assets/gps/gps11.jpg';
 
 import app2 from '../assets/app/app2.jpg';
 import app3 from '../assets/app/app3.jpg';
-import app4 from '../assets/app/app4.jpg';
-import app5 from '../assets/app/app5.jpg';
-import app6 from '../assets/app/app6.jpg';
 
 import bc2 from '../assets/bc/bc2.jpg';
 import bc3 from '../assets/bc/bc3.jpg';
@@ -73,7 +70,7 @@ const projects = [
     image: homerImage,
     description:
       'A website and app redesign for one of my favorite restaurants This project focuses on improving user experience, making it easy to explore the menu, book a table, and enjoy the vibe of Homer St Café both online and offline.',
-    extras: [app2, app3, app4, app5, app6],
+    extras: [app2, app3],
   },
   {
     id: '4',
@@ -152,6 +149,18 @@ const ProjectDetail = () => {
           ))}
         </div>
       )}
+
+      {project.id === '3' && (
+        <div className="figma-embed-wrapper">
+          <iframe
+            title="Homer St Cafe Prototype"
+            className="figma-prototype"
+            src="https://www.figma.com/proto/15aI1fl0qS2JwwWhnjm3Ze/Untitled?node-id=1-241&p=f&t=kiqAVxbWpaTGBaCW-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A240"
+            allowFullScreen
+          ></iframe>
+        </div>
+      )}
+
     </motion.div>
   );
 };

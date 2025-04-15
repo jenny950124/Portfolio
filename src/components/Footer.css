@@ -26,7 +26,8 @@ footer {
   gap: 20px;
 }
 
-.footer-links a, .footer-links Link {
+.footer-links a,
+.footer-links Link {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -36,11 +37,17 @@ footer {
   color: #ff9d9d;
 }
 
-/* Email section */
+/* Email and Socials stacked vertically */
+.footer-email-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 50px;
+}
+
 .footer-email {
   font-size: 14px;
-  text-align: right;
-  margin-left: 50px;
+  margin-bottom: 10px;
 }
 
 .footer-email a {
@@ -50,6 +57,20 @@ footer {
 }
 
 .footer-email a:hover {
+  color: #ff9d9d;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social-icons a {
+  color: white;
+  font-size: 20px;
+}
+
+.footer-social-icons a:hover {
   color: #ff9d9d;
 }
 

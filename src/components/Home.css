@@ -295,7 +295,6 @@
   background: #eee;
 }
 
-/* ✨ 이모지 컨테이너 */
 .emoji-container {
   position: absolute;
   top: 0;
@@ -326,7 +325,6 @@
   100% { transform: translateY(0) rotate(0deg); }
 }
 
-/* 👀 안내 문구 */
 .floating-hint {
   font-size: 1rem;
   margin-bottom: 1rem;
