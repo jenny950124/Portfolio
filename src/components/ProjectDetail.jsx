@@ -120,26 +120,17 @@ const ProjectDetail = () => {
           ))}
         </div>
       )}
+        {project.id === '3' && (
+      <div className="video-wrapper">
+        <p className="video-label">🎥 App Prototype Demo</p>
+        <video className="project-video" controls>
+          <source src="/Prototype.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    )}
 
-      {project.id === '3' && (
-        <div className="figma-button-wrapper">
-          <p className="figma-label">✨ Try the interactive prototype</p>
-          <a
-            className="figma-button"
-            href="https://www.figma.com/proto/nmFnGzhUIo8qGht0XWeLOc/Untitled?node-id=1-41&p=f&t=cJpjE7TVs15eexDa-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A43"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            🔗 View Figma Prototype
-          </a>
-          <p className="figma-link-text">
-            or copy and paste this link:<br />
-            <code>
-              https://www.figma.com/proto/bCn24tl07U7vpQAyGf1JXG/Prototype?page-id=0%3A1&node-id=1-43
-            </code>
-          </p>
-        </div>
-      )}
+
     </motion.div>
   );
 };

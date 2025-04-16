@@ -48,37 +48,22 @@ body.project-detail-page,
 }
 
 /* Figma Section */
-.figma-button-wrapper {
+/* 🎥 Video Section */
+.video-wrapper {
   text-align: center;
   margin: 3rem 0;
 }
 
-.figma-label {
+.video-label {
   font-weight: bold;
   font-size: 1.2rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
   color: #333;
 }
 
-.figma-button {
-  display: inline-block;
-  background-color: #ff4b5c;
-  color: white;
-  font-weight: bold;
-  padding: 0.9rem 2rem;
-  border-radius: 40px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.figma-button:hover {
-  background-color: #e03c4d;
-}
-
-.figma-link-text {
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: 1rem;
-  text-align: center;
-  word-break: break-all;
+.project-video {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
