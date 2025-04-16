@@ -10,12 +10,10 @@ function Model({ isRunning, isListening, onArrive }) {
   const [positionZ, setPositionZ] = useState(-10);
   const [arrived, setArrived] = useState(false);
 
-  // ✅ 애니메이션 이름 확인용 콘솔
   useEffect(() => {
     console.log("🎞 Available animations:", Object.keys(actions));
   }, [actions]);
 
-  // 애니메이션 컨트롤
   useEffect(() => {
     const runAction = actions['Take 001'];
     const idleAction = actions['Idle'] || actions['Nod'];
@@ -30,7 +28,7 @@ function Model({ isRunning, isListening, onArrive }) {
     }
   }, [isRunning, isListening, actions]);
 
-  // 달리기 애니메이션 중 위치 이동
+
   useFrame((state, delta) => {
     if (isRunning && !arrived) {
       setPositionZ((prevZ) => {
@@ -80,7 +78,7 @@ export function MeiModel({ triggerRun, isListening }) {
         </Canvas>
       </div>
 
-      {/* 💬 English speech bubbles */}
+    
       {!triggerRun && isListening && (
         <div className="bubble">Write your message so Mei can start running! ✉️</div>
       )}

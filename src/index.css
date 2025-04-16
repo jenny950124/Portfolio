@@ -28,8 +28,7 @@ body, html, #root {
   width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
-  display: block; /* ✅ 기존 flex 제거 */
-  /* background: linear-gradient(to bottom, #FFC0CB 0%, #ff4b5c 50%, #ff0000 100%); */
+  display: block; 
   background: black;
 }
 

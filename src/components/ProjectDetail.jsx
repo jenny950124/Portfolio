@@ -86,7 +86,7 @@ const ProjectDetail = () => {
   const { id } = useParams();
   const project = projects.find((p) => p.id === id);
 
-  // ✅ Force background white for this page
+
   useEffect(() => {
     document.body.style.backgroundColor = '#ffffff';
     const root = document.getElementById('root');

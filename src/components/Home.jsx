@@ -78,7 +78,6 @@ const Home = () => {
 
   return (
     <>
-      {/* 👋 Hero Section with Clouds */}
       <section className="home" onMouseEnter={triggerCloudFlash}>
         <div className="cloud cloud-left" ref={cloudLeftRef}>
           <img src={cloud1} alt="Cloud Left" />
@@ -97,10 +96,10 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ✨ Scatter Text Section */}
+  
       <FloatingText />
 
-      {/* 💡 설명 Intro Section */}
+   
       <section className="intro-section">
         <div className="intro-content">
           <span className="intro-step">Work</span>
@@ -114,7 +113,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 🎴 Poster Section */}
+   
       <section className="poster-section">
         <img
           src={posterMockup}

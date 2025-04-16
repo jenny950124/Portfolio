@@ -1,4 +1,4 @@
-/* 🔲 Navbar 기본 스타일 */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -18,7 +18,7 @@
   height: 60px;
 }
 
-/* ☁️ 기본 내비게이션 리스트 */
+
 .nav-list {
   display: flex;
   list-style: none;

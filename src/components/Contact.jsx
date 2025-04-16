@@ -10,7 +10,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setTriggerRun(true);
-    e.target.submit(); // manually submit after Formspree setup
+    e.target.submit(); 
   };
 
   return (
